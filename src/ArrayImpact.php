@@ -29,7 +29,7 @@ trait ArrayImpact {
                 $this->items = array_filter($this->items, $func);
                 return $this;
             } else {
-                $items = array_filter($this->items, $func);
+                $items = array_filter($this->items, $func, ARRAY_FILTER_USE_BOTH);
                 return pandaList($items);
             }
         } else {
@@ -52,6 +52,6 @@ trait ArrayImpact {
     }
 
     public function unique() {
-        return pandaList(array_unique($this->items));
+        return pandaList(array_unique($this->items, SORT_REGULAR));
     }
 }
