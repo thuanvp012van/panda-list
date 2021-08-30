@@ -1,0 +1,24 @@
+{
+    "name": "panda-php/panda-list",
+    "description": "Thao tác với mảng dễ hơn với panda-list của PandaPHP",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PandaCore\\PandaList\\": "src/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "thuanvp012van",
+            "email": "thuanvp012van@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^5.3"
+    }
+}
